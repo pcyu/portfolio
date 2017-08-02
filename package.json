@@ -1,0 +1,32 @@
+{
+  "name": "mobile-nav-1",
+  "version": "1.0.0",
+  "description": "#### Mobile Nav 1 is an extended code snippet for students learning how to build navigation that is responsive.",
+  "main": "index.js",
+  "scripts": {
+    "start": "server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samuraijane/mobile-nav-1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samuraijane/mobile-nav-1/issues"
+  },
+  "homepage": "https://github.com/samuraijane/mobile-nav-1#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-sass": "^3.1.0"
+  },
+  "dependencies": {
+    "express": "^4.15.3",
+    "jquery": "^3.2.1"
+  }
+}
