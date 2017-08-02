@@ -187,29 +187,29 @@ body {
 h1 {
   font-size: 3rem; }
 
+h4 {
+  color: #555;
+  margin: 24px 0 6px;
+  text-transform: uppercase; }
+
 html {
   color: #4a4a4a;
-  font-size: 14px; }
-
-* {
-  box-sizing: border-box;
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0; }
-
-html {
+  font-size: 14px;
   height: 100%; }
   html.disable {
     overflow: hidden; }
 
-.overlay {
+p + p {
+  margin-top: 12px; }
+
+.y-overlay {
   background: inherit;
   position: fixed;
   top: 0;
   transition: background 0.6s ease-in-out;
   width: 100%;
   z-index: 1; }
-  .overlay.active {
+  .y-overlay.active {
     background: rgba(0, 0, 0, 0.7);
     height: 2000px; }
 
@@ -217,49 +217,6 @@ html {
   margin: 0 auto;
   position: relative;
   width: 90%; }
-
-.nav {
-  border: 1px solid #ccc;
-  background: white;
-  margin: 0 0 24px;
-  padding: 12px 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 4; }
-  .nav.inactive {
-    background: none;
-    border: 1px solid transparent; }
-
-.nimg {
-  width: 60px; }
-  .nimg.col2 {
-    display: inline-block;
-    width: 200px; }
-    .nimg.col2:first-of-type {
-      margin-right: 30px; }
-  .nimg.opacity {
-    opacity: 0.1; }
-
-img {
-  display: block;
-  height: auto;
-  width: 100%; }
-
-.cf:before,
-.cf:after {
-  content: '';
-  display: table; }
-
-.cf:after {
-  clear: both; }
-
-.nabs {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 3; }
 
 .burger {
   background: none;
@@ -299,16 +256,43 @@ img {
     transition: transform 0.5s ease-in-out;
     -webkit-transition: -webkit-transform 0.5s ease-in-out; }
 
+.nav {
+  border: 1px solid #ccc;
+  background: white;
+  margin: 0 0 24px;
+  padding: 12px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 4; }
+  .nav.inactive {
+    background: none;
+    border: 1px solid transparent; }
+
+.nimg {
+  width: 60px; }
+  .nimg.col2 {
+    display: inline-block;
+    width: 200px; }
+    .nimg.col2:first-of-type {
+      margin-right: 30px; }
+  .nimg.opacity {
+    opacity: 0.1; }
+
+img {
+  display: block;
+  height: auto;
+  width: 100%; }
+
+.nabs {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3; }
+
 .thebody {
   padding-top: 60px; }
-
-h4 {
-  color: #555;
-  margin: 24px 0 6px;
-  text-transform: uppercase; }
-
-p + p {
-  margin-top: 12px; }
 
 .centergroup {
   margin: 36px 0;
@@ -326,9 +310,6 @@ p + p {
   z-index: 2; }
   .mobilemenu.active {
     right: 0; }
-
-ul {
-  list-style: none; }
 
 .mobilemenu li {
   color: inherit;

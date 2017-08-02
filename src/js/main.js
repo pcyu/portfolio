@@ -8,12 +8,14 @@
     calculateDimensions: function(){
       var viewportWidth = window.innerWidth;
       var viewportHeight = window.innerHeight;
-      $("#responsive-width").empty().html(viewportWidth);
-      $("#responsive-height").empty().html(viewportHeight);
+      $("#responsive-width").html(viewportWidth);
+      $("#responsive-height").html(viewportHeight);
     },
     init: function() {
       //app.testAlert();  //c002
+      app.box();
       app.mobileToggle();
+      app.sizer();
     },
     mobileToggle: function() {
       $(document).on('click', '#mobile', function() {
@@ -22,7 +24,7 @@
         $('#themobilemenu').toggleClass('active');
         $('#thenav').toggleClass('inactive');
         $('#thenimg').toggleClass('opacity');
-        $('#theoverlay').toggleClass('active');
+        $('#x-overlay').toggleClass('active');
       });
     },
     sizer: function() {
@@ -41,7 +43,6 @@
 
   $(window).on('load', () => {
     app.init();
-    app.sizer();
   });
 
   $(window).on('resize', () => {
