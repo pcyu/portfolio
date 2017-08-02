@@ -1,1 +1,189 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
+html {
+  height: 100%;
+  &.disable {
+  overflow: hidden;
+  }
+}
+
+.overlay {
+  background: inherit;
+  position: fixed;
+  top: 0;
+  transition: background 0.6s ease-in-out;
+  width: 100%;
+  z-index: 1;
+  &.active {
+    background: rgba(0, 0, 0, 0.7);
+    height: 2000px;
+  }
+}
+
+.y-wrap {
+  margin: 0 auto;
+  position: relative;
+  width: 90%;
+}
+
+.nav {
+  border: 1px solid #ccc;
+  background: white;
+  margin: 0 0 24px;
+  padding: 12px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 4;
+  &.inactive {
+    background: none;
+    border: 1px solid transparent;
+  }
+}
+
+.nimg {
+  width: 60px;
+  &.col2 {
+    display: inline-block;
+    width: 200px;
+    &:first-of-type {
+      margin-right: 30px;
+    }
+  }
+  &.opacity {
+    opacity: 0.1;
+  }
+}
+
+img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.cf:before,
+.cf:after {
+  content: '';
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.nabs {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+}
+
+// Burger menu button
+$burger--thickness: 4px;
+.burger {
+	$width: 28px;
+  background: none;
+  border: 0;
+  border-bottom: $burger--thickness solid currentColor;
+  cursor: pointer;
+	outline: 0;
+	padding: 0;
+  transition: border-bottom 1s ease-in-out;
+	-webkit-transition: border-bottom 1s ease-in-out;
+	width: $width;
+
+	// Fix for extra space in Firefox
+	&::-moz-focus-inner {
+		border: 0;
+		padding: 0;
+	}
+
+  &.active {
+    border-bottom: 4px solid transparent;
+    &:before {
+      transform: rotate(-405deg) translateY(1px) translateX(-3px);
+      -webkit-transform: rotate(-405deg) translateY(1px) translateX(-3px);
+    }
+    &:after {
+      transform: rotate(405deg) translateY(-4px) translateX(-5px);
+      -webkit-transform: rotate(405deg) translateY(-4px) translateX(-5px);
+    }
+  }
+
+	&:before {
+		content: "";
+		display: block;
+		border-bottom: $burger--thickness solid currentColor;
+		width: 100%;
+		margin-bottom: 5px;
+		transition: transform 0.5s ease-in-out;
+		-webkit-transition: -webkit-transform 0.5s ease-in-out;
+	}
+
+	&:after {
+		content: "";
+		display: block;
+		border-bottom: $burger--thickness solid currentColor;
+		width: 100%;
+		margin-bottom: 5px;
+		transition: transform 0.5s ease-in-out;
+		-webkit-transition: -webkit-transform 0.5s ease-in-out;
+	}
+}
+
+.thebody {
+  padding-top: 60px;
+}
+
+h4 {
+  color: #555;
+  margin: 24px 0 6px;
+  text-transform: uppercase;
+}
+
+p + p {
+  margin-top: 12px;
+}
+
+.centergroup {
+  margin: 36px 0;
+  text-align: center;
+}
+
+.mobilemenu {
+  background: white;
+  height: 2000px;
+  padding: 130px 60px 24px 24px;
+  position: absolute;
+  right: -300px;
+  top: -68px; // same height as the nav
+  transition: right 0.6s ease-in-out;
+  width: 160px;
+  z-index: 2;
+  &.active {
+    right: 0;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  .mobilemenu & {
+    color: inherit;
+    cursor: pointer;
+    margin: 18px 0;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      color: crimson;
+      padding-left: 5px;
+    }
+  }
+}
