@@ -1,12 +1,19 @@
-.nav {
-  border: 1px solid #ccc;
-  background: white;
+.navwrap {
+  left: 0;
   margin: 0 0 24px;
-  padding: 12px 0;
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 4;
+  &.inactive {
+    position: relative;
+  }
+}
+
+.nav {
+  background: white;
+  border: 1px solid #aaa;
+  border-top: 8px solid #aaa;
+  padding: 12px 0;
   &.inactive {
     background: none;
     border: 1px solid transparent;
@@ -15,6 +22,9 @@
 
 .nimg {
   width: 60px;
+  @include responsive(truman) {
+    display: inline-block;
+  }
   &.col2 {
     display: inline-block;
     width: 200px;
@@ -33,12 +43,15 @@ img {
   width: 100%;
 }
 
-.nabs {
+.mobileicon {
   position: absolute;
-  right: 0;
+  right: 5%;  //c004
   top: 50%;
   transform: translateY(-50%);
-  z-index: 3;
+  z-index: 8;
+  @include responsive(truman) {
+    display: none;
+  }
 }
 
 
@@ -61,7 +74,16 @@ img {
   top: -68px; // same height as the nav
   transition: right 0.6s ease-in-out;
   width: 160px;
-  z-index: 2;
+  z-index: 6;
+  @include responsive(truman) {
+    bottom: 0;
+    height: auto;
+    padding: 0;
+    right: 0;
+    text-align: right;
+    top: initial;
+    width: auto;
+  }
   &.active {
     right: 0;
   }
@@ -73,9 +95,19 @@ li {
     cursor: pointer;
     margin: 18px 0;
     transition: all 0.3s ease-in-out;
+    @include responsive(truman) {
+      display: inline-block;
+      margin: 0 20px;
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
     &:hover {
       color: crimson;
       padding-left: 5px;
+      @include responsive(truman) {
+        padding-left: 0;
+      }
     }
   }
 }

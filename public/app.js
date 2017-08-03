@@ -18,12 +18,13 @@
       app.sizer();
     },
     mobileToggle: function() {
-      $(document).on('click', '#mobile', function() {
+      $(document).on('click', '#x-mobile', function() {
         $('html').toggleClass('disable');
-        $('#mobile').toggleClass('active');
+        $('#x-mobile').toggleClass('active');
+        $('#x-navwrap').toggleClass('inactive');
         $('#themobilemenu').toggleClass('active');
         $('#thenav').toggleClass('inactive');
-        $('#thenimg').toggleClass('opacity');
+        //$('#thenimg').toggleClass('opacity');
         $('#x-overlay').toggleClass('active');
       });
     },
