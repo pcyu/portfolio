@@ -2,13 +2,29 @@
 //  Navigation – Logo
 //------------------------------------------------------------------------------
 .navwrap {
-  @include responsive(truman) {
-    background: thistle;
-    // height: 80px;
+  @include responsive(truman) {  //c011
+    background: white;
+    border-bottom: 1px solid #aaa;
+    border-top: 8px solid #aaa;
+    left: 0;
+    margin: 0 0 24px;
+    position: fixed;
+    top: 0;
+    padding: 16px 0;
+    width: 100%;
+    z-index: 20;
+    &:after {  //c008, c012
+      background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+      bottom: -13px;
+      content: '';
+      height: 12px;
+      position: absolute;
+      width: 100%;
+    }
   }
 }
-.navlogo {  //c005, c006
-  // background: white;
+.navlogo {  //c005, c006, c011
+  background: white;
   border-bottom: 1px solid #aaa;
   border-top: 8px solid #aaa;
   left: 0;
@@ -18,16 +34,25 @@
   padding: 16px 0;
   width: 100%;
   z-index: 20;
-  @include responsive(truman) {
+  @include responsive(truman) { //c013
+    background: none;
+    border: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
     position: static;
+    width: calc(20% - 2px);
   }
-  &:after {  //c008
-  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+  &:after {  //c008, c012
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
     bottom: -13px;
     content: '';
     height: 12px;
     position: absolute;
     width: 100%;
+    @include responsive(truman) {
+      display: none;
+    }
   }
 }
 
@@ -36,7 +61,7 @@
     margin-left: 5%;
     width: 60px;
     @include responsive(truman) {
-      display: inline-block;
+      margin-left: 0;
     }
   }
 }
@@ -70,17 +95,13 @@
   width: 180px;
   z-index: 40;
   @include responsive(truman) {
-    // height: auto;
-    // margin-right: 5%;
-    // padding: 0;
-    // right: 0;
-    // text-align: right;
-    // top: 48px;
-    // width: auto;
+    background: none;
+    display: inline-block;
     height: auto;
     padding: 0;
     position: static;
-    width: 600px;
+    text-align: right;
+    width: calc(80% - 2px);
   }
   &.active {
     right: 0;

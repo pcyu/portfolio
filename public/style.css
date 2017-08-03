@@ -211,6 +211,9 @@ p + p {
   transition: background 0.6s ease-in-out;
   width: 100%;
   z-index: 30; }
+  @media only screen and (min-width: 768px) {
+    .y-overlay {
+      display: none; } }
   .y-overlay.active {
     background: rgba(0, 0, 0, 0.7); }
 
@@ -221,6 +224,11 @@ p + p {
   width: 90%; }
   .y-wrap.modify {
     margin-top: 100px; }
+  .y-wrap.wide {
+    width: 100%; }
+    @media only screen and (min-width: 768px) {
+      .y-wrap.wide {
+        width: 90%; } }
 
 .mobileicon {
   background: none;
@@ -262,9 +270,26 @@ p + p {
 
 @media only screen and (min-width: 768px) {
   .navwrap {
-    background: thistle; } }
+    background: white;
+    border-bottom: 1px solid #aaa;
+    border-top: 8px solid #aaa;
+    left: 0;
+    margin: 0 0 24px;
+    position: fixed;
+    top: 0;
+    padding: 16px 0;
+    width: 100%;
+    z-index: 20; }
+    .navwrap:after {
+      background: linear-gradient(to bottom, white 0%, rgba(255, 255, 255, 0) 100%);
+      bottom: -13px;
+      content: '';
+      height: 12px;
+      position: absolute;
+      width: 100%; } }
 
 .navlogo {
+  background: white;
   border-bottom: 1px solid #aaa;
   border-top: 8px solid #aaa;
   left: 0;
@@ -276,7 +301,13 @@ p + p {
   z-index: 20; }
   @media only screen and (min-width: 768px) {
     .navlogo {
-      position: static; } }
+      background: none;
+      border: none;
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      position: static;
+      width: calc(20% - 2px); } }
   .navlogo:after {
     background: linear-gradient(to bottom, white 0%, rgba(255, 255, 255, 0) 100%);
     bottom: -13px;
@@ -284,13 +315,16 @@ p + p {
     height: 12px;
     position: absolute;
     width: 100%; }
+    @media only screen and (min-width: 768px) {
+      .navlogo:after {
+        display: none; } }
 
 .nimg.logo {
   margin-left: 5%;
   width: 60px; }
   @media only screen and (min-width: 768px) {
     .nimg.logo {
-      display: inline-block; } }
+      margin-left: 0; } }
 
 .navicon {
   position: fixed;
@@ -313,10 +347,13 @@ p + p {
   z-index: 40; }
   @media only screen and (min-width: 768px) {
     .navitems {
+      background: none;
+      display: inline-block;
       height: auto;
       padding: 0;
       position: static;
-      width: 600px; } }
+      text-align: right;
+      width: calc(80% - 2px); } }
   .navitems.active {
     right: 0; }
 
