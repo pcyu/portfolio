@@ -1,88 +1,86 @@
+//------------------------------------------------------------------------------
+//  Navigation – Logo
+//------------------------------------------------------------------------------
 .navwrap {
+  @include responsive(truman) {
+    background: thistle;
+    // height: 80px;
+  }
+}
+.navlogo {  //c005, c006
+  // background: white;
+  border-bottom: 1px solid #aaa;
+  border-top: 8px solid #aaa;
   left: 0;
   margin: 0 0 24px;
   position: fixed;
   top: 0;
+  padding: 16px 0;
   width: 100%;
-  &.inactive {
-    position: relative;
+  z-index: 20;
+  @include responsive(truman) {
+    position: static;
   }
-}
-
-.nav {
-  background: white;
-  border: 1px solid #aaa;
-  border-top: 8px solid #aaa;
-  padding: 12px 0;
-  &.inactive {
-    background: none;
-    border: 1px solid transparent;
+  &:after {  //c008
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+    bottom: -13px;
+    content: '';
+    height: 12px;
+    position: absolute;
+    width: 100%;
   }
 }
 
 .nimg {
-  width: 60px;
-  @include responsive(truman) {
-    display: inline-block;
-  }
-  &.col2 {
-    display: inline-block;
-    width: 200px;
-    &:first-of-type {
-      margin-right: 30px;
+  &.logo {
+    margin-left: 5%;
+    width: 60px;
+    @include responsive(truman) {
+      display: inline-block;
     }
   }
-  &.opacity {
-    opacity: 0.1;
-  }
 }
 
-img {
-  display: block;
-  height: auto;
-  width: 100%;
-}
 
-.mobileicon {
-  position: absolute;
+//------------------------------------------------------------------------------
+//  Navigation – Mobile Icon
+//------------------------------------------------------------------------------
+.navicon {  //c005
+  position: fixed;
   right: 5%;  //c004
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 8;
+  top: 32px;
+  z-index: 50;
   @include responsive(truman) {
     display: none;
   }
 }
 
 
-
-.thebody {
-  padding-top: 60px;
-}
-
-.centergroup {
-  margin: 36px 0;
-  text-align: center;
-}
-
-.mobilemenu {
+//------------------------------------------------------------------------------
+//  Navigation – Items
+//------------------------------------------------------------------------------
+.navitems {  //c005
   background: white;
   height: 2000px;
-  padding: 130px 60px 24px 24px;
-  position: absolute;
+  padding: 80px 0 0 26px;
+  position: fixed;
   right: -300px;
-  top: -68px; // same height as the nav
+  top: 0;
   transition: right 0.6s ease-in-out;
-  width: 160px;
-  z-index: 6;
+  width: 180px;
+  z-index: 40;
   @include responsive(truman) {
-    bottom: 0;
+    // height: auto;
+    // margin-right: 5%;
+    // padding: 0;
+    // right: 0;
+    // text-align: right;
+    // top: 48px;
+    // width: auto;
     height: auto;
     padding: 0;
-    right: 0;
-    text-align: right;
-    top: initial;
-    width: auto;
+    position: static;
+    width: 600px;
   }
   &.active {
     right: 0;
@@ -90,10 +88,10 @@ img {
 }
 
 li {
-  .mobilemenu & {
+  .navitems & {
     color: inherit;
     cursor: pointer;
-    margin: 18px 0;
+    margin: 10px 0;
     transition: all 0.3s ease-in-out;
     @include responsive(truman) {
       display: inline-block;
@@ -108,6 +106,26 @@ li {
       @include responsive(truman) {
         padding-left: 0;
       }
+    }
+  }
+}
+
+
+
+//------------------------------------------------------------------------------
+//  Images
+//------------------------------------------------------------------------------
+.imgrow {
+  margin: 36px 0;
+  text-align: center;
+}
+
+.nimg {
+  &.col2 {
+    display: inline-block;
+    width: 200px;
+    &:first-of-type {
+      margin-right: 30px;
     }
   }
 }

@@ -15,17 +15,14 @@
       //app.testAlert();  //c002
       app.box();
       app.mobileToggle();
-      app.sizer();
+      app.sizer();  //c007
     },
-    mobileToggle: function() {
-      $(document).on('click', '#x-mobile', function() {
+    mobileToggle: function() {  //c009
+      $(document).on('click', '#t-mobileicon', function() {
         $('html').toggleClass('disable');
-        $('#x-mobile').toggleClass('active');
-        $('#x-navwrap').toggleClass('inactive');
-        $('#themobilemenu').toggleClass('active');
-        $('#thenav').toggleClass('inactive');
-        //$('#thenimg').toggleClass('opacity');
-        $('#x-overlay').toggleClass('active');
+        $(this).toggleClass('active');
+        $('#t-navitems').toggleClass('active');
+        $('#t-overlay').toggleClass('active');
       });
     },
     sizer: function() {
@@ -47,7 +44,7 @@
   });
 
   $(window).on('resize', () => {
-    app.sizer();
+    app.sizer();  //c007
   });
 
 })(window.jQuery);
