@@ -182,7 +182,7 @@ img {
   clear: both; }
 
 body {
-  font-family: "Arial", sans-serif; }
+  font-family: "Roboto Slab", sans-serif; }
 
 h1 {
   font-size: 2rem; }
@@ -339,8 +339,12 @@ p + p {
       display: none; } }
 
 .navname {
-  position: relative;
-  left: 5%; }
+  cursor: pointer;
+  left: 5%;
+  position: relative; }
+  .navname:hover {
+    color: crimson;
+    text-decoration: underline; }
 
 .navitems {
   background: white;
@@ -377,7 +381,8 @@ p + p {
         margin-right: 0; } }
   .navitems li:hover {
     color: crimson;
-    padding-left: 5px; }
+    padding-left: 5px;
+    text-decoration: underline; }
     @media only screen and (min-width: 768px) {
       .navitems li:hover {
         padding-left: 0; } }
