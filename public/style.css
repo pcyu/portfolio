@@ -184,6 +184,9 @@ img {
 body {
   font-family: "Arial", sans-serif; }
 
+h1 {
+  font-size: 2rem; }
+
 h4 {
   margin: 24px 0 6px;
   text-transform: uppercase; }
@@ -334,6 +337,10 @@ p + p {
   @media only screen and (min-width: 768px) {
     .navicon {
       display: none; } }
+
+.navname {
+  position: relative;
+  left: 5%; }
 
 .navitems {
   background: white;
