@@ -1,23 +1,14 @@
 {
-  "name": "mobile-nav-1",
+  "name": "peter-yu-portfolio",
   "version": "1.0.0",
-  "description": "#### Mobile Nav 1 is an extended code snippet for students learning how to build navigation that is responsive.",
+  "description": "Peter Yu's Portfolio Page",
   "main": "index.js",
   "scripts": {
-    "start": "server.js",
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/samuraijane/mobile-nav-1.git"
-  },
-  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/samuraijane/mobile-nav-1/issues"
-  },
-  "homepage": "https://github.com/samuraijane/mobile-nav-1#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
