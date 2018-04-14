@@ -343,7 +343,7 @@ p + p {
   left: 5%;
   position: relative; }
   .navname:hover {
-    color: crimson;
+    color: #404046;
     text-decoration: underline; }
 
 .navitems {
@@ -380,7 +380,7 @@ p + p {
       .navitems li:last-of-type {
         margin-right: 0; } }
   .navitems li:hover {
-    color: crimson;
+    color: #404046;
     padding-left: 5px;
     text-decoration: underline; }
     @media only screen and (min-width: 768px) {
