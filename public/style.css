@@ -206,6 +206,9 @@ img {
 p + p {
   margin-top: 12px; }
 
+section {
+  padding-bottom: 1em; }
+
 .y-overlay {
   background: inherit;
   height: 2000px;
@@ -348,9 +351,6 @@ p + p {
   cursor: pointer;
   left: 5%;
   position: relative; }
-  .navname:hover {
-    color: #404046;
-    text-decoration: underline; }
 
 .navitems {
   background: white;
@@ -404,4 +404,9 @@ p + p {
     margin-right: 30px; }
 
 .intro {
-  grid-column-start: 2; }
+  grid-column-start: 2;
+  text-align: center; }
+
+.bio {
+  grid-column-start: 2;
+  text-align: center; }
