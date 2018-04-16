@@ -195,8 +195,6 @@ html {
   color: #4a4a4a;
   font-size: 14px;
   height: 100%; }
-  html.disable {
-    overflow: hidden; }
 
 img {
   display: block;
@@ -282,10 +280,9 @@ section {
 
 @media only screen and (min-width: 768px) {
   .navwrap {
-    background: white;
-    border-bottom: 1px solid #aaa;
-    border-top: 8px solid #aaa;
+    background: #7A8D96;
     left: 0;
+    height: 76px;
     margin: 0 0 24px;
     position: fixed;
     top: 0;
@@ -301,10 +298,9 @@ section {
       width: 100%; } }
 
 .navlogo {
-  background: white;
-  border-bottom: 1px solid #aaa;
-  border-top: 8px solid #aaa;
+  background: #7A8D96;
   left: 0;
+  height: 80px;
   margin: 0 0 24px;
   position: fixed;
   top: 0;
@@ -350,10 +346,14 @@ section {
 .navname {
   cursor: pointer;
   left: 5%;
-  position: relative; }
+  position: relative;
+  top: 20%; }
+  @media only screen and (min-width: 768px) {
+    .navname {
+      top: 10%; } }
 
 .navitems {
-  background: white;
+  background: #7A8D96;
   height: 2000px;
   padding: 80px 0 0 26px;
   position: fixed;
@@ -375,7 +375,7 @@ section {
     right: 0; }
 
 .navitems li {
-  color: inherit;
+  color: white;
   cursor: pointer;
   margin: 10px 0;
   transition: all 0.3s ease-in-out; }
