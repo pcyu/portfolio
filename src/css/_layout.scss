@@ -29,3 +29,10 @@
     }
   }
 }
+
+.y-grid {
+  display: grid;
+  grid-template-columns: 30px 1fr 30px;
+  position: relative;
+  top: 90px;
+}

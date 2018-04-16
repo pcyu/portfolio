@@ -233,6 +233,12 @@ p + p {
       .y-wrap.wide {
         width: 90%; } }
 
+.y-grid {
+  display: grid;
+  grid-template-columns: 30px 1fr 30px;
+  position: relative;
+  top: 90px; }
+
 .mobileicon {
   background: none;
   border: 0;
@@ -396,3 +402,6 @@ p + p {
   width: 200px; }
   .nimg.col2:first-of-type {
     margin-right: 30px; }
+
+.intro {
+  grid-column-start: 2; }
