@@ -237,6 +237,7 @@ section {
 .y-grid {
   display: grid;
   grid-template-columns: 30px 1fr 30px;
+  justify-items: center;
   position: relative;
   top: 90px; }
 
@@ -404,8 +405,14 @@ section {
     margin-right: 30px; }
 
 .intro {
-  grid-column-start: 2;
-  text-align: center; }
+  grid-column-start: 2; }
+
+.intro-image {
+  width: 200px;
+  grid-column-start: 2; }
+
+.intro-bottom {
+  grid-column-start: 1; }
 
 .bio {
   grid-column-start: 2;
