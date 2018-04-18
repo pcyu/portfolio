@@ -1,18 +1,39 @@
 .intro {
   grid-column-start: 2;
+  z-index: 1;
 }
 
 .intro-image {
   width: 200px;
   grid-column-start: 2;
+  z-index: 1;
 }
 
 .intro-bottom {
   grid-column-start: 2;
   text-align: center;
+  z-index: 1;
 }
 
 .bio {
   grid-column-start: 2;
   text-align: center;
+  z-index: 1;
+}
+
+.port-image {
+  width: 200px;
+  grid-column-start: 2;
+  z-index: 1;
+}
+
+.port-caption {
+  grid-column-start: 2;
+  text-align: center;
+  width: 200px;
+  z-index: 1;
+}
+
+.link-separator {
+  display: inline;
 }

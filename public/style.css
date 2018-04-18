@@ -209,7 +209,7 @@ section {
 
 .y-overlay {
   background: inherit;
-  height: 2000px;
+  height: 0px;
   position: fixed;
   top: 0;
   transition: background 0.6s ease-in-out;
@@ -219,6 +219,7 @@ section {
     .y-overlay {
       display: none; } }
   .y-overlay.active {
+    height: 2000px;
     background: rgba(0, 0, 0, 0.7); }
 
 .y-wrap {
@@ -405,16 +406,34 @@ section {
     margin-right: 30px; }
 
 .intro {
-  grid-column-start: 2; }
+  grid-column-start: 2;
+  z-index: 1; }
 
 .intro-image {
   width: 200px;
-  grid-column-start: 2; }
+  grid-column-start: 2;
+  z-index: 1; }
 
 .intro-bottom {
   grid-column-start: 2;
-  text-align: center; }
+  text-align: center;
+  z-index: 1; }
 
 .bio {
   grid-column-start: 2;
-  text-align: center; }
+  text-align: center;
+  z-index: 1; }
+
+.port-image {
+  width: 200px;
+  grid-column-start: 2;
+  z-index: 1; }
+
+.port-caption {
+  grid-column-start: 2;
+  text-align: center;
+  width: 200px;
+  z-index: 1; }
+
+.link-separator {
+  display: inline; }
