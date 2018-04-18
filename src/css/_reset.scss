@@ -179,11 +179,11 @@ input[type=button] {width: auto; overflow: visible;}
 // Custom text-selection colors (remove any text shadows: http://twitter.com/miketaylr/status/12228805301)
 //------------------------------------------------------------------------------
 ::-moz-selection {
-	background: thistle;
+	background: #7597A7;
 	text-shadow: none;
 }
 ::selection {
-	background: thistle;
+	background: #7597A7;
 	text-shadow: none;
 }
 
