@@ -22,7 +22,7 @@
 }
 
 .port-image {
-  width: 200px;
+  width: 80%;
   grid-column-start: 2;
   z-index: 1;
 }
@@ -36,4 +36,14 @@
 
 .link-separator {
   display: inline;
+}
+
+footer {
+  background: #7A8D96;
+  color: white;
+  grid-column: 1 / 4;
+  margin-top: 30px;
+  padding: 10px 0;
+  text-align: center;
+  width: 95%;
 }
