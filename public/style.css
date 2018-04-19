@@ -38,7 +38,8 @@ a {
   color: inherit; }
 
 a:hover, a:active {
-  color: #404046; }
+  color: #404046;
+  text-decoration: underline; }
 
 a:visited {
   color: inherit; }
@@ -201,9 +202,6 @@ img {
   height: auto;
   width: 100%; }
 
-p + p {
-  margin-top: 12px; }
-
 section {
   padding-bottom: 1em; }
 
@@ -238,7 +236,6 @@ section {
 .y-grid {
   display: grid;
   grid-template-columns: 15% 1fr 15%;
-  grid-row-gap: 20px;
   justify-items: center;
   position: relative;
   top: 90px; }
@@ -428,6 +425,10 @@ section {
   grid-column-start: 2;
   text-align: center;
   width: 200px; }
+
+.port-description {
+  grid-column-start: 2;
+  text-align: center; }
 
 .link-separator {
   display: inline; }

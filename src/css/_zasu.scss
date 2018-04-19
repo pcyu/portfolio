@@ -28,6 +28,12 @@
   width: 200px;
 }
 
+.port-description {
+  grid-column-start: 2;
+  text-align: center;
+  
+}
+
 .link-separator {
   display: inline;
 }
