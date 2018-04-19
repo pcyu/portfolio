@@ -23,6 +23,10 @@
           }, 600, function(){
             window.location.hash = hash;
           });
+          $('html').toggleClass('disable');
+          $('#t-mobileicon').removeClass('active');
+          $('#t-navitems').removeClass('active');
+          $('#t-overlay').removeClass('active');
         }
       });
     }
