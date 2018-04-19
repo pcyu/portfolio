@@ -38,7 +38,7 @@ a {
   color: inherit; }
 
 a:hover, a:active {
-  text-decoration: none; }
+  color: #404046; }
 
 a:visited {
   color: inherit; }
@@ -347,7 +347,6 @@ section {
       display: none; } }
 
 .navname {
-  cursor: pointer;
   left: 5%;
   position: relative;
   top: 20%; }
@@ -407,34 +406,28 @@ section {
     margin-right: 30px; }
 
 .intro {
-  grid-column-start: 2;
-  z-index: 1; }
+  grid-column-start: 2; }
 
 .intro-image {
   width: 200px;
-  grid-column-start: 2;
-  z-index: 1; }
+  grid-column-start: 2; }
 
 .intro-bottom {
   grid-column-start: 2;
-  text-align: center;
-  z-index: 1; }
+  text-align: center; }
 
 .bio {
   grid-column-start: 2;
-  text-align: center;
-  z-index: 1; }
+  text-align: center; }
 
 .port-image {
   width: 80%;
-  grid-column-start: 2;
-  z-index: 1; }
+  grid-column-start: 2; }
 
 .port-caption {
   grid-column-start: 2;
   text-align: center;
-  width: 200px;
-  z-index: 1; }
+  width: 200px; }
 
 .link-separator {
   display: inline; }
