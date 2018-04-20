@@ -12,14 +12,14 @@
     padding: 16px 0;
     width: 100%;
     z-index: 20;
-    &:after {  //c008, c012
-      background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
-      bottom: -13px;
-      content: '';
-      height: 12px;
-      position: absolute;
-      width: 100%;
-    }
+    // &:after {  //c008, c012
+    //   background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+    //   bottom: -13px;
+    //   content: '';
+    //   height: 12px;
+    //   position: absolute;
+    //   width: 100%;
+    // }
   }
 }
 .navlogo {  //c005, c006, c011
@@ -41,17 +41,17 @@
     position: static;
     width: calc(20% - 2px);
   }
-  &:after {  //c008, c012
-    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
-    bottom: -13px;
-    content: '';
-    height: 12px;
-    position: absolute;
-    width: 100%;
-    @include responsive(truman) {
-      display: none;
-    }
-  }
+  // &:after {  //c008, c012
+  //   background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+  //   bottom: -13px;
+  //   content: '';
+  //   height: 12px;
+  //   position: absolute;
+  //   width: 100%;
+  //   @include responsive(truman) {
+  //     display: none;
+  //   }
+  // }
 }
 
 .nimg {

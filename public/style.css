@@ -289,14 +289,7 @@ section {
     top: 0;
     padding: 16px 0;
     width: 100%;
-    z-index: 20; }
-    .navwrap:after {
-      background: linear-gradient(to bottom, white 0%, rgba(255, 255, 255, 0) 100%);
-      bottom: -13px;
-      content: '';
-      height: 12px;
-      position: absolute;
-      width: 100%; } }
+    z-index: 20; } }
 
 .navlogo {
   background: #7A8D96;
@@ -317,16 +310,6 @@ section {
       padding: 0;
       position: static;
       width: calc(20% - 2px); } }
-  .navlogo:after {
-    background: linear-gradient(to bottom, white 0%, rgba(255, 255, 255, 0) 100%);
-    bottom: -13px;
-    content: '';
-    height: 12px;
-    position: absolute;
-    width: 100%; }
-    @media only screen and (min-width: 768px) {
-      .navlogo:after {
-        display: none; } }
 
 .nimg.logo {
   margin-left: 5%;
