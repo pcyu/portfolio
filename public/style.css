@@ -281,7 +281,7 @@ section {
 
 @media only screen and (min-width: 768px) {
   .navwrap {
-    background: #7A8D96;
+    background: #3f704d;
     left: 0;
     margin: 0 0 24px;
     position: fixed;
@@ -329,12 +329,15 @@ section {
   left: 5%;
   position: relative;
   top: 20%; }
+  .navname h1 {
+    color: white;
+    font-weight: 400; }
   @media only screen and (min-width: 768px) {
     .navname {
       top: 10%; } }
 
 .navitems {
-  background: #7A8D96;
+  background: #3f704d;
   height: 2000px;
   padding: 80px 0 0 26px;
   position: fixed;
@@ -416,7 +419,7 @@ section {
   display: inline; }
 
 footer {
-  background: #7A8D96;
+  background: #3f704d;
   color: white;
   grid-column: 1 / 4;
   margin-top: 30px;
