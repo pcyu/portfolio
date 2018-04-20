@@ -283,7 +283,6 @@ section {
   .navwrap {
     background: #7A8D96;
     left: 0;
-    height: 76px;
     margin: 0 0 24px;
     position: fixed;
     top: 0;
@@ -294,7 +293,6 @@ section {
 .navlogo {
   background: #7A8D96;
   left: 0;
-  height: 80px;
   margin: 0 0 24px;
   position: fixed;
   top: 0;
