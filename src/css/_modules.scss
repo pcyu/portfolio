@@ -69,7 +69,7 @@
 .navicon {  //c005
   position: fixed;
   right: 5%;  //c004
-  top: 32px;
+  top: 20px;
   z-index: 50;
   @include responsive(truman) {
     display: none;
