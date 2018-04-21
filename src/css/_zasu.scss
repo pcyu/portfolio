@@ -5,6 +5,9 @@
 .intro-image {
   width: 200px;
   grid-column-start: 2;
+  & img {
+    border-radius: 40%;
+  }
 }
 
 .intro-bottom {
@@ -39,7 +42,7 @@
 }
 
 footer {
-  background: #3f704d;
+  background: #2F4F4F;
   color: white;
   grid-column: 1 / 4;
   margin-top: 30px;
