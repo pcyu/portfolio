@@ -412,11 +412,18 @@ section {
 .port-caption {
   grid-column-start: 2;
   text-align: center;
-  width: 200px; }
+  width: 200px;
+  font-weight: 700;
+  text-transform: uppercase; }
 
 .port-description {
   grid-column-start: 2;
   text-align: center; }
+
+.port-details {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1em; }
 
 .link-separator {
   display: inline; }
@@ -428,4 +435,4 @@ footer {
   margin-top: 30px;
   padding: 10px 0;
   text-align: center;
-  width: 95%; }
+  width: 100%; }
