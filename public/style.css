@@ -153,7 +153,7 @@ input[type=button] {
   text-shadow: none; }
 
 a:link {
-  -webkit-tap-highlight-color: transparent; }
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
 ins {
   background-color: #000;
